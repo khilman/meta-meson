@@ -5,6 +5,12 @@ DEPENDS += "bison-native bc-native dtc-native python3-native amlogic-fip"
 
 PROVIDES = "u-boot"
 
+# Use local git
+LICENSE = "CLOSED"
+LIC_FILES_CHKSUM = ""
+SRCREV = "wip/kvim3-fit"
+SRC_URI = "git:///home/khilman/work/platforms/u-boot/.git;protocol=file;branch=wip/kvim3-fit"
+
 SRC_URI_append_meson-axg = " \
        file://0001-board-meson-s400-enable-eMMC-when-booting-from-it.patch \
 "
